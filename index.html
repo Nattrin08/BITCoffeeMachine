@@ -11,17 +11,16 @@
   </head>
   <body>
     <main class="container-fluid">
-      <!-- Header start -->
+      <!-- Inicio Header -->
       <header class="nav-menu">
-        <!-- Menu start-->
+        <!-- Inicio Menu -->
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid">
-            <!-- Brand logo start -->
+            <!-- Inicio logo -->
             <a class="navbar-brand" href="#">
               <img src="./assets/img/Logo.png" alt="Brand-logo" />
             </a>
-            <!-- Brand logo end -->
-            <!-- Responsive menu start -->
+            <!-- Fin logo -->
             <button
               class="navbar-toggler"
               type="button"
@@ -29,11 +28,9 @@
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Responsive menu end -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                 <li class="nav-item">
@@ -54,59 +51,79 @@
             </div>
           </div>
         </nav>
-        <!-- Menu end -->
+        <!-- Fin menu -->
       </header>
-      <!-- Header end -->
-      <section
-        class="main-section d-flex justify-content-between align-items-center"
-      >
-        <aside
-          class="text-aside d-flex flex-column justify-content-around w-25 ps-5"
-        >
-          <h2>Pide desde tu casa!</h2>
-          <p class="mt-5">
-            Encuentra en la tienda lo que más te guste, después agrégalo a tu
-            carrito de compras y ¡listo!, así de fácil puedes tener tu pedido.
-            Si no tienes cuenta puedes
-            <a href="#" class="register"> registrarte aquí.</a>
-          </p>
-        </aside>
-        <form class="login-form me-5 pe-2">
-          <div class="mb-4">
-            <label for="exampleInputEmail1" class="form-label"
-              >Correo electrónico</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              style="background-color: #faeab1"
-            />
-            <div id="emailHelp" class="form-text">
-              Nunca compartiremos tu correo electrónico.
+      <!-- Fin header -->
+      <!-- Inicio sección principal -->
+      <section class="main-section">
+        <!-- Inicio grid -->
+        <div class="container-fluid">
+          <!-- Fila 1 -->
+          <div class="row pt-3 pt-sm-5 mb-xxl-0">
+            <!-- Columna 1 -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <h2 class="text-center fw-bold">Pide desde tu casa!</h2>
             </div>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Contraseña</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              style="background-color: #faeab1"
-            />
-            <div class="form-text text-end">
-              <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
+          <!-- Fila 2 -->
+          <div class="row pt-4 pt-sm-5">
+            <!-- Columna 1 -->
+            <div class="col-1 col-lg-4 col-xxl-5"></div>
+            <!-- Columna 2 -->
+            <div class="col-1 col-lg-3 col-xxl-4"></div>
+            <!-- Columna 3 -->
+            <div class="col-12 col-lg-5 col-xxl-3 pt-lg-5 mb-lg-5 mt-xxl-0">
+              <form class="login-form pt-sm-5 mt-xxl-0">
+                <div class="mb-4">
+                  <label for="exampleInputEmail1" class="form-label fw-semibold"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    style="background-color: #faeab1"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    Nunca compartiremos tu correo electrónico.
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="exampleInputPassword1" class="form-label fw-semibold"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    style="background-color: #faeab1"
+                  />
+                  <div class="form-text text-end fw-semibold">
+                    <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2">
+                    Iniciar Sesión
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-login w-100 mt-4">
-              Iniciar Sesión
-            </button>
+          <!-- Fila 3 -->
+          <div class="row pt-5 pt-sm-5 pt-lg-5 pt-xxl-0">
+            <!-- Columna 1 -->
+            <div class="col-12 col-lg-6 col-xxl-4 pt-sm-5 pt-lg-5 pt-xxl-0">
+              <p class="">
+                Encuentra en la tienda lo que más te guste, después agrégalo a tu
+                carrito de compras y ¡listo!, así de fácil puedes tener tu pedido.
+                Si no tienes cuenta puedes
+                <a href="#" class="register fw-semibold">registrarte aquí.</a>
+              </p>
+            </div>
           </div>
-        </form>
+        </div>
       </section>
     </main>
     <script src="./assets/lib/bootstrap.min.js"></script>
