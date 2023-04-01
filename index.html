@@ -73,32 +73,31 @@
             <div class="col-1 col-lg-3 col-xxl-4"></div>
             <!-- Columna 3 -->
             <div class="col-12 col-lg-5 col-xxl-3 pt-lg-5 mb-lg-5 mt-xxl-0">
-              <form class="login-form pt-sm-5 mt-xxl-0">
+              <form class="pt-sm-5 mt-xxl-0 needs-validation" novalidate>
                 <div class="mb-4">
-                  <label for="exampleInputEmail1" class="form-label fw-semibold"
-                    >Correo electrónico</label
-                  >
+                  <label for="validationCustom01" class="form-label fw-semibold">Correo electrónico</label>
                   <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    style="background-color: #faeab1"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    Nunca compartiremos tu correo electrónico.
+                  type="email"
+                  class="form-control"
+                  id="validationCustom01"
+                  style="background-color: #faeab1"
+                  required/>
+                  <div class="invalid-feedback">
+                    Debes ingresar tu correo electrónico.
                   </div>
                 </div>
                 <div class="mb-4">
-                  <label for="exampleInputPassword1" class="form-label fw-semibold"
-                    >Contraseña</label
-                  >
+                  <label for="validationCustom02" class="form-label fw-semibold"
+                    >Contraseña</label>
                   <input
                     type="password"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="validationCustom02"
                     style="background-color: #faeab1"
-                  />
+                    required/>
+                  <div class="invalid-feedback">
+                    Debes ingresar tu contraseña.
+                  </div>
                   <div class="form-text text-end fw-semibold">
                     <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
                   </div>
@@ -126,6 +125,7 @@
         </div>
       </section>
     </main>
+    <script src="./src/main.js"></script>
     <script src="./assets/lib/bootstrap.min.js"></script>
   </body>
 </html>
