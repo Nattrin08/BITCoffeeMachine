@@ -34,18 +34,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                 <li class="nav-item">
-                  <a class="nav-link ms-4" href="#">Inicio</a>
+                  <a class="nav-link ms-4 text-center" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-4" href="#">Contacto</a>
+                  <a class="nav-link ms-4 text-center" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled ms-4" href="#"
+                  <a class="nav-link disabled ms-4 text-center" href="#"
                     >Inicio de Sesión</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-4" href="#">Registrate</a>
+                  <a class="nav-link ms-4 text-center" href="#">Registrate</a>
                 </li>
               </ul>
             </div>
@@ -72,46 +72,38 @@
             <!-- Columna 2 -->
             <div class="col-1 col-lg-3 col-xxl-4"></div>
             <!-- Columna 3 -->
-            <div class="col-12 col-lg-5 col-xxl-3 pt-lg-5 mb-lg-5 mt-xxl-0">
+            <div class="col-12 col-lg-5 col-xxl-3 pt-lg-4 pb-lg-5 mt-xxl-0">
               <form class="pt-sm-5 mt-xxl-0 needs-validation" novalidate>
                 <div class="mb-4">
-                  <label for="validationCustom01" class="form-label fw-semibold">Correo electrónico</label>
+                  <label for="validationUserName" class="form-label fw-semibold">Nombre de Usuario</label>
                   <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="validationCustom01"
+                  id="validationUserName"
                   style="background-color: #faeab1"
                   required/>
-                  <div class="invalid-feedback">
-                    Debes ingresar tu correo electrónico.
-                  </div>
                 </div>
-                <div class="mb-4">
-                  <label for="validationCustom02" class="form-label fw-semibold"
+                <div class="mb-4 mb-xxl-3">
+                  <label for="validationPassword" class="form-label fw-semibold"
                     >Contraseña</label>
                   <input
                     type="password"
                     class="form-control"
-                    id="validationCustom02"
+                    id="validationPassword"
                     style="background-color: #faeab1"
                     required/>
-                  <div class="invalid-feedback">
-                    Debes ingresar tu contraseña.
-                  </div>
-                  <div class="form-text text-end fw-semibold">
+                  <div class="form-text text-end visible" id="forget-password">
                     <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2">
-                    Iniciar Sesión
-                  </button>
+                  <input type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2 " value="Iniciar Sesión"/>
                 </div>
               </form>
             </div>
           </div>
           <!-- Fila 3 -->
-          <div class="row pt-5 pt-sm-5 pt-lg-5 pt-xxl-0">
+          <div class="row pt-4 pt-sm-4 pt-lg-4 pt-xxl-0">
             <!-- Columna 1 -->
             <div class="col-12 col-lg-6 col-xxl-4 pt-sm-5 pt-lg-5 pt-xxl-0">
               <p class="">
@@ -125,7 +117,8 @@
         </div>
       </section>
     </main>
-    <script src="./src/main.js"></script>
+    <script src="./src/login.js"></script>
+    <script src="./src/validation.js"></script>
     <script src="./assets/lib/bootstrap.min.js"></script>
   </body>
 </html>
