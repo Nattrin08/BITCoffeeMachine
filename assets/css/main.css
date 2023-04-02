@@ -1,22 +1,35 @@
-@import url(../assets/fonts/Poppins-Medium.ttf);
-@import url(../assets/fonts/Poppins-SemiBold.ttf);
-
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-
 body {
-    
-    background-color: #FAF8F1;
-    background-image: url(../img/Vector_66background.png);
-    background-position:top;
-    background-repeat: no-repeat;
-    background-size: 100% 616px;
+  background-color: #faf8f1;
+  background-image: url(../img/Vector_66background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80px auto;
+
 }
 
 /*Barra de navegación */
+
+.navbar {
+  padding: 1rem;
+}
+
+/*desaparece logo (responsivo)*/
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+/*
+@media (min-width: 375px) {
+  body {
+    background-size: auto auto;
+  }
+}
+*/
