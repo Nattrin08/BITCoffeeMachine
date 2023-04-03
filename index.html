@@ -73,40 +73,44 @@
             <div class="col-1 col-lg-3 col-xxl-4"></div>
             <!-- Columna 3 -->
             <div class="col-12 col-lg-5 col-xxl-3 pt-lg-4 pb-lg-5 mt-xxl-0">
-              <form class="pt-sm-5 mt-xxl-0 needs-validation" novalidate>
-                <div class="mb-4">
-                  <label for="validationUserName" class="form-label fw-semibold">Nombre de Usuario</label>
+              <form class="pt-sm-5 mt-xxl-0 needs-validation" onsubmit="checkLogin(event)" novalidate>
+                <div class="mb-4 position-relative">
+                  <label for="userName" class="form-label fw-semibold">Nombre de Usuario</label>
                   <input
                   type="text"
                   class="form-control"
-                  id="validationUserName"
+                  id="userName"
+                  name="userName"
                   style="background-color: #faeab1"
                   required/>
+                  <div class="invalid-tooltip">Debes ingresar tu nombre de usuario</div>
                 </div>
-                <div class="mb-4 mb-xxl-3">
-                  <label for="validationPassword" class="form-label fw-semibold"
+                <div class="mb-4 mb-xxl-1 position-relative">
+                  <label for="userPassword" class="form-label fw-semibold"
                     >Contraseña</label>
                   <input
                     type="password"
                     class="form-control"
-                    id="validationPassword"
+                    id="userPassword"
+                    name="userPassword"
                     style="background-color: #faeab1"
                     required/>
-                  <div class="form-text text-end visible" id="forget-password">
-                    <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
-                  </div>
+                    <div class="invalid-tooltip">Debes ingresar tu contraseña</div>
                 </div>
-                <div class="d-flex justify-content-center">
-                  <input type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2 " value="Iniciar Sesión"/>
+                <div class="form-text text-end pb-xxl-3" id="forget-password">
+                  <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="d-flex justify-content-center pt-3">
+                  <input type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2" value="Iniciar Sesión">
                 </div>
               </form>
             </div>
           </div>
           <!-- Fila 3 -->
-          <div class="row pt-4 pt-sm-4 pt-lg-4 pt-xxl-0">
+          <div class="row pt-4 pt-sm-4 pt-md-3 pt-lg-4 pt-xxl-0">
             <!-- Columna 1 -->
-            <div class="col-12 col-lg-6 col-xxl-4 pt-sm-5 pt-lg-5 pt-xxl-0">
-              <p class="">
+            <div class= "paragraph col-12 col-md-9 col-lg-6 col-xxl-4 pt-sm-5 pt-md-3 pt-lg-2 pt-xxl-0">
+              <p>
                 Encuentra en la tienda lo que más te guste, después agrégalo a tu
                 carrito de compras y ¡listo!, así de fácil puedes tener tu pedido.
                 Si no tienes cuenta puedes
@@ -118,7 +122,6 @@
       </section>
     </main>
     <script src="./src/login.js"></script>
-    <script src="./src/validation.js"></script>
     <script src="./assets/lib/bootstrap.min.js"></script>
   </body>
 </html>

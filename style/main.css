@@ -29,6 +29,11 @@ h2 {
   color: white;
 }
 
+.paragraph {
+  background-color: rgba(239, 217, 193, 0.30);
+  border-radius: 5px;
+}
+
 p {
   text-shadow: 3px 3px 3px rgb(156, 156, 156);
   text-align: justify;
