@@ -1,127 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
-    <link rel="stylesheet" href="./assets/lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="./style/main.css" />
-    <title>BIT COFFEE MACHINE</title>
-  </head>
-  <body>
-    <main class="container-fluid">
-      <!-- Inicio Header -->
-      <header class="nav-menu">
-        <!-- Inicio Menu -->
-        <nav class="navbar navbar-expand-md">
-          <div class="container-fluid">
-            <!-- Inicio logo -->
-            <a class="navbar-brand" href="#">
-              <img src="./assets/img/Logo.png" alt="Brand-logo" />
-            </a>
-            <!-- Fin logo -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-                <li class="nav-item">
-                  <a class="nav-link ms-4 text-center" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-4 text-center" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled ms-4 text-center" href="#"
-                    >Inicio de Sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-4 text-center" href="#">Registrate</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- Fin menu -->
-      </header>
-      <!-- Fin header -->
-      <!-- Inicio sección principal -->
-      <section class="main-section">
-        <!-- Inicio grid -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+  <link rel="stylesheet" href="./assets/lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <title>BIT COFFEE MACHINE</title>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <!-- Inicio Header -->
+    <header class="nav-menu">
+      <!-- Inicio Menu -->
+      <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <!-- Fila 1 -->
-          <div class="row pt-3 pt-sm-5 mb-xxl-0">
-            <!-- Columna 1 -->
-            <div class="col-12 col-lg-6 col-xxl-4">
-              <h2 class="text-center fw-bold">Pide desde tu casa!</h2>
-            </div>
-          </div>
-          <!-- Fila 2 -->
-          <div class="row pt-4 pt-sm-5">
-            <!-- Columna 1 -->
-            <div class="col-1 col-lg-4 col-xxl-5"></div>
-            <!-- Columna 2 -->
-            <div class="col-1 col-lg-3 col-xxl-4"></div>
-            <!-- Columna 3 -->
-            <div class="col-12 col-lg-5 col-xxl-3 pt-lg-4 pb-lg-5 mt-xxl-0">
-              <form class="pt-sm-5 mt-xxl-0 needs-validation" onsubmit="checkLogin(event)" novalidate>
-                <div class="mb-4 position-relative">
-                  <label for="userName" class="form-label fw-semibold">Nombre de Usuario</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  id="userName"
-                  name="userName"
-                  style="background-color: #faeab1"
-                  required/>
-                  <div class="invalid-tooltip">Debes ingresar tu nombre de usuario</div>
-                </div>
-                <div class="mb-4 mb-xxl-1 position-relative">
-                  <label for="userPassword" class="form-label fw-semibold"
-                    >Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="userPassword"
-                    name="userPassword"
-                    style="background-color: #faeab1"
-                    required/>
-                    <div class="invalid-tooltip">Debes ingresar tu contraseña</div>
-                </div>
-                <div class="form-text text-end pb-xxl-3" id="forget-password">
-                  <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
-                </div>
-                <div class="d-flex justify-content-center pt-3">
-                  <input type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2" value="Iniciar Sesión">
-                </div>
-              </form>
-            </div>
-          </div>
-          <!-- Fila 3 -->
-          <div class="row pt-4 pt-sm-4 pt-md-3 pt-lg-4 pt-xxl-0">
-            <!-- Columna 1 -->
-            <div class= "paragraph col-12 col-md-9 col-lg-6 col-xxl-4 pt-sm-5 pt-md-3 pt-lg-2 pt-xxl-0">
-              <p>
-                Encuentra en la tienda lo que más te guste, después agrégalo a tu
-                carrito de compras y ¡listo!, así de fácil puedes tener tu pedido.
-                Si no tienes cuenta puedes
-                <a href="#" class="register fw-semibold">registrarte aquí.</a>
-              </p>
-            </div>
+          <!-- Inicio logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/Logo.png" alt="Brand-logo" />
+          </a>
+          <!-- Fin logo -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+              <li class="nav-item">
+                <a class="nav-link ms-4 text-center" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-4 text-center" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled ms-4 text-center" href="#">Inicio de Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-4 text-center" href="#">Registrate</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </main>
-    <script src="./src/login.js"></script>
-    <script src="./assets/lib/bootstrap.min.js"></script>
-  </body>
+      </nav>
+      <!-- Fin menu -->
+    </header>
+    <!-- Fin header -->
+    <!-- Inicio sección principal -->
+    <section class="main-section">
+      <!-- Inicio grid -->
+      <div class="container-fluid">
+        <!-- Fila 1 -->
+        <div class="row pt-3 pt-sm-5 mb-xxl-0">
+          <!-- Columna 1 -->
+          <div class="col-12 col-lg-6 col-xxl-4">
+            <h2 class="text-center fw-bold">Pide desde tu casa!</h2>
+          </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-1 col-xxl-5"></div>
+          <!-- Columna 2 -->
+          <div class="col-1 col-xxl-4"></div>
+          <!-- Columna 3 -->
+            <div class="col-12 col-xxl-3 text-center alert alert-danger" role="alert" id="loginMessage"></div>
+        </div>
+        <!-- Fila 3 -->
+        <div class="row pt-4 pt-sm-5 pt-xxl-2">
+          <!-- Columna 1 -->
+          <div class="col-1 col-lg-4 col-xxl-5"></div>
+          <!-- Columna 2 -->
+          <div class="col-1 col-lg-3 col-xxl-4"></div>
+          <!-- Columna 3 -->
+          <div class="col-12 col-lg-5 col-xxl-3 pt-lg-4 pb-lg-3 pt-xxl-2">
+            <form class="pt-sm-5 pt-xxl-2 needs-validation" onsubmit="checkLogin(event)" novalidate>
+              <div class="mb-4 position-relative">
+                <label for="userName" class="form-label fw-semibold">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="userName" name="userName" style="background-color: #faeab1"
+                  required />
+                <div class="invalid-tooltip">Debes ingresar tu nombre de usuario</div>
+              </div>
+              <div class="mb-4 mb-xxl-1 position-relative">
+                <label for="userPassword" class="form-label fw-semibold">Contraseña</label>
+                <input type="password" class="form-control" id="userPassword" name="userPassword"
+                  style="background-color: #faeab1" required />
+                <div class="invalid-tooltip">Debes ingresar tu contraseña</div>
+              </div>
+              <div class="form-text text-end pb-xxl-3" id="forget-password">
+                <a class="password-forget" href="#">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class=" justify-content-center pt-3 position-relative">
+                <input type="submit" class="btn btn-login w-100 mt-2 pt-2 mb-2 enabled" value="Iniciar Sesión" id="submitButton">
+              </div>
+          </div>
+          </form>
+        </div>
+        
+        <!-- Fila 4 -->
+        <div class="row pt-4 pt-sm-4 pt-md-3 pt-lg-4 pt-xxl-0">
+          <!-- Columna 1 -->
+          <div class="paragraph col-12 col-md-9 col-lg-6 col-xxl-4 pt-sm-5 pt-md-3 pt-lg-2 pt-xxl-0">
+            <p>
+              Encuentra en la tienda lo que más te guste, después agrégalo a tu
+              carrito de compras y ¡listo!, así de fácil puedes tener tu pedido.
+              Si no tienes cuenta puedes
+              <a href="#" class="register fw-semibold">registrarte aquí.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./src/login.js"></script>
+  <script src="./assets/lib/bootstrap.min.js"></script>
+</body>
+
 </html>
