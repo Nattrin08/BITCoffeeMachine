@@ -1,0 +1,133 @@
+@import url(../assets/fonts/Poppins-Medium.ttf);
+@import url(../assets/fonts/Poppins-SemiBold.ttf);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(../assets/img/login_background.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+h2 {
+  text-shadow: 3px 3px 3px rgb(156, 156, 156);
+}
+
+.btn-login {
+  font-weight: 600;
+  color: white;
+  background-color: #C58940 !important;
+}
+
+.btn-login:hover {
+  background-color: #a56c26 !important;
+  color: white;
+}
+
+.paragraph {
+  background-color: rgba(239, 217, 193, 0.30);
+  border-radius: 5px;
+}
+
+p {
+  text-shadow: 3px 3px 3px rgb(156, 156, 156);
+  text-align: justify;
+}
+
+.register {
+  color: #C58940;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.password-forget {
+  color: rgba(33, 37, 51, 0.75);
+  text-decoration: none;
+}
+
+
+@media (min-width: 375px) {
+  body {
+    background-size: auto auto;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .register {
+    color: #faeab1;
+  }
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  .form-label, .form-text {
+    font-size: 1.2em;
+  }
+
+  .btn-login {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-size: auto 180%;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  .form-label, .form-text {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-size: auto auto;
+  }
+
+  .form-label, .form-text {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-size: 100% auto;
+  }
+}
